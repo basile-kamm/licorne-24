@@ -1,0 +1,27 @@
+.burger-icon {
+  width: 24px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5px;
+  cursor: pointer;
+
+  .burger-bar {
+    background: $dark;
+    height: 3.5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-icon {
+    position: relative;
+    right: -20px;
+    width: 45px;
+    height: 35px;
+
+    .burger-bar {
+      height: 7px;
+    }
+  }
+}

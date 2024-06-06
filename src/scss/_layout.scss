@@ -1,0 +1,18 @@
+.l-header {
+  background: $light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  border-bottom: 1px solid $dark;
+  height: 40px;
+  padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .l-header {
+    height: 80px;
+    padding: 24px 0;
+  }
+}
