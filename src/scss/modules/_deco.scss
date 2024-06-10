@@ -2,6 +2,7 @@
   position: absolute;
   aspect-ratio: 1/1;
   animation: decoRotate 30s infinite linear;
+  overflow: hidden;
 
   g {
     fill: $dark;
@@ -19,16 +20,27 @@
 }
 
 .t-star {
-  width: 210;
+  width: 210px;
   top: 900px;
-  right: -120px;
+  right: -100px;
 }
 
 @media (min-width: 768px) {
   .t-swiss {
-    width: 450px;
+    width: 350px;
     top: 500px;
     left: -200px;
+  }
+  .t-star {
+    width: 600px;
+    top: 850px;
+    right: -250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .t-swiss {
+    width: 400px;
   }
   .t-star {
     width: 800px;

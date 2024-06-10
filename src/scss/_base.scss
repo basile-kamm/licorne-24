@@ -38,6 +38,14 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 767px) {
+  body,
+  html {
+    position: relative;
+    overflow-x: hidden;
+  }
+}
+
 a {
   color: inherit;
 }
