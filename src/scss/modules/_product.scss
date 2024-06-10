@@ -1,0 +1,100 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.product-card {
+  background: $light;
+  position: relative;
+  padding: 0 10px 10px;
+
+  &.t-blonde {
+    h2 {
+      color: $blondBack;
+    }
+    .product-texts {
+      color: $blondMain;
+    }
+
+    .button {
+      color: $blondBack;
+      background: $blondMain;
+    }
+  }
+  &.t-brune {
+    h2 {
+      color: $brownMain;
+    }
+    .product-texts {
+      color: $brownBack;
+    }
+
+    .button {
+      color: $brownBack;
+      background: $brownMain;
+    }
+  }
+  &.t-ipa {
+    h2 {
+      color: $ipaMain;
+    }
+    .product-texts {
+      color: $ipaBack;
+    }
+
+    .button {
+      color: $ipaBack;
+      background: $ipaMain;
+    }
+  }
+
+  .button {
+    font-size: 13px;
+
+    &::before {
+      background: $dark;
+    }
+  }
+}
+
+.product-img {
+  position: absolute;
+  width: 140px;
+  bottom: -20px;
+  left: -20px;
+}
+
+.product-title {
+  font-size: 74px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.product-description {
+  padding-left: 115px;
+}
+
+.product-text {
+  font-size: 15px;
+  font-weight: 250;
+  margin-bottom: 20px;
+}
+
+.product-ingredient {
+  font-size: 12px;
+  font-weight: 250;
+  margin-bottom: 20px;
+}
+
+.product-price-unity {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.product-price-group {
+  font-size: 13px;
+  font-weight: 250;
+  margin-bottom: 10px;
+}

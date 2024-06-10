@@ -15,25 +15,25 @@
 
 .t-swiss {
   left: -150px;
-  top: 400px;
+  top: 250px;
   width: 280px;
 }
 
 .t-star {
   width: 210px;
-  top: 900px;
+  top: 730px;
   right: -100px;
 }
 
 @media (min-width: 768px) {
   .t-swiss {
     width: 350px;
-    top: 500px;
+    top: 350px;
     left: -200px;
   }
   .t-star {
     width: 600px;
-    top: 850px;
+    top: 700px;
     right: -250px;
   }
 }
@@ -44,7 +44,7 @@
   }
   .t-star {
     width: 800px;
-    top: 770px;
+    top: 550px;
     right: -350px;
   }
 }

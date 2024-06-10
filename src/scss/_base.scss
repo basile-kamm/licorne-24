@@ -35,16 +35,15 @@ body {
   font-family: "Inter", sans-serif;
   color: $dark;
   background: $light;
-  overflow-x: hidden;
 }
 
-@media (max-width: 767px) {
-  body,
-  html {
-    position: relative;
-    overflow-x: hidden;
-  }
-}
+// @media (max-width: 767px) {
+//   body,
+//   html {
+//     position: relative;
+//     overflow-x: hidden;
+//   }
+// }
 
 a {
   color: inherit;

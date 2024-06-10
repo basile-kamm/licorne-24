@@ -10,9 +10,15 @@
   padding: 10px 0;
 }
 
+.l-hero {
+  margin-top: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
 .l-product {
   background: $dark;
-  height: 200px;
+  padding: 30px 10px;
 }
 
 @media (min-width: 768px) {
