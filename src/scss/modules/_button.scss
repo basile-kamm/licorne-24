@@ -1,0 +1,64 @@
+.button {
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+  overflow-y: hidden;
+  display: inline-block;
+
+  .button-text {
+    transition: transform 0.3s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $ipaMain;
+    transform: translateY(100%);
+    transition: transform 0.3s 0.1s;
+  }
+
+  .button-text:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: translateY(150%);
+    transition: transform 0.5s;
+  }
+
+  &.t-outline {
+    background: $light;
+    border: 1.5px solid $dark;
+  }
+
+  &.t-solid {
+    background: $dark;
+    color: $light;
+  }
+}
+
+.button:hover {
+  .button-text:nth-child(1) {
+    transform: translateY(-150%);
+  }
+
+  .button-text:nth-child(2) {
+    transform: translateY(0);
+  }
+
+  &::before {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 25px;
+  }
+}

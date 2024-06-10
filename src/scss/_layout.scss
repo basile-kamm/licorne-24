@@ -10,6 +10,11 @@
   padding: 10px 0;
 }
 
+.l-product {
+  background: $dark;
+  height: 200px;
+}
+
 @media (min-width: 768px) {
   .l-header {
     height: 80px;

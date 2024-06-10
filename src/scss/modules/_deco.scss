@@ -1,0 +1,47 @@
+.deco {
+  position: absolute;
+  aspect-ratio: 1/1;
+  animation: decoRotate 30s infinite linear;
+
+  g {
+    fill: $dark;
+  }
+
+  &.t-reverse {
+    animation-direction: reverse;
+  }
+}
+
+.t-swiss {
+  left: -150px;
+  top: 400px;
+  width: 280px;
+}
+
+.t-star {
+  width: 210;
+  top: 900px;
+  right: -120px;
+}
+
+@media (min-width: 768px) {
+  .t-swiss {
+    width: 450px;
+    top: 500px;
+    left: -200px;
+  }
+  .t-star {
+    width: 800px;
+    top: 770px;
+    right: -350px;
+  }
+}
+
+@keyframes decoRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
