@@ -71,6 +71,13 @@
   left: -20px;
 }
 
+.product-cta {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .product-title {
   font-size: 74px;
   font-weight: 900;
@@ -159,6 +166,7 @@
     transition: opacity 0.3s, transform 0.3s;
     transform: translateX(-100%);
     align-items: flex-start;
+    pointer-events: none;
   }
 
   .product-text,
@@ -179,6 +187,7 @@
       opacity: 1;
       transform: translateX(0);
       transition: opacity 0.3s 0.2s, transform 0.3s 0.2s;
+      pointer-events: all;
     }
 
     .product-img {

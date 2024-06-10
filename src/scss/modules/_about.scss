@@ -1,0 +1,30 @@
+.about-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.about-text {
+  font-size: 15px;
+  font-weight: 250;
+}
+
+.about-container {
+  margin-bottom: 100px;
+
+  .button {
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    .button {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+}

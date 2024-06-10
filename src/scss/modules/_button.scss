@@ -37,6 +37,12 @@
     border: 1.5px solid $dark;
   }
 
+  &.t-outline-light {
+    background: $dark;
+    border: 1.5px solid $light;
+    color: $light;
+  }
+
   &.t-solid {
     background: $dark;
     color: $light;

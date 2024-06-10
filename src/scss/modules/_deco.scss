@@ -25,6 +25,12 @@
   right: -100px;
 }
 
+.t-frib {
+  bottom: -180px;
+  right: -180px;
+  width: 380px;
+}
+
 @media (min-width: 768px) {
   .t-swiss {
     width: 350px;
@@ -35,6 +41,12 @@
     width: 600px;
     top: 700px;
     right: -250px;
+  }
+
+  .t-frib {
+    width: 750px;
+    bottom: -340px;
+    right: -360px;
   }
 }
 

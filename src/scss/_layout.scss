@@ -22,9 +22,23 @@
   overflow: hidden;
 }
 
+.l-about {
+  position: relative;
+  margin-top: 80px;
+}
+
+.l-footer {
+  background: $dark;
+  height: 200px;
+}
+
 @media (min-width: 768px) {
   .l-header {
     height: 80px;
     padding: 24px 0;
+  }
+
+  .l-about {
+    margin-top: 140px;
   }
 }
