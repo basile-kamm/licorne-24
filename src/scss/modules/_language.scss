@@ -1,0 +1,10 @@
+.language-container {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .language-container {
+    font-size: 30px;
+  }
+}

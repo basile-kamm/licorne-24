@@ -1,0 +1,17 @@
+.social-icon {
+  width: 30px;
+  height: 30px;
+
+  &.t-dark path {
+    fill: $dark;
+  }
+  &.t-light path {
+    fill: $light;
+  }
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
