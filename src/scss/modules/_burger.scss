@@ -48,6 +48,7 @@
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
+  @include hoverLine($dark, right, 2px);
 }
 
 .burger-menu.is-open {

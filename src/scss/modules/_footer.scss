@@ -15,15 +15,19 @@
   margin-top: 70px;
 }
 
-.footer-info {
-  font-size: 15px;
+.footer-info,
+.footer-legal {
   font-weight: 250;
   text-decoration: none;
+  @include hoverLine($light, left, 0.5px);
+}
+
+.footer-info {
+  font-size: 15px;
 }
 
 .footer-legal {
   font-size: 12px;
-  font-weight: 250;
 }
 
 .footer-copyright {

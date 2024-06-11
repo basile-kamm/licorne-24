@@ -1,0 +1,21 @@
+@mixin hoverLine($background, $origin, $height) {
+  overflow-x: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: $height;
+    transform-origin: $origin;
+    background: $background;
+    transition: transform 0.4s;
+    transform: scaleX(0);
+  }
+
+  &:hover::before {
+    transform: scaleX(100%);
+  }
+}
