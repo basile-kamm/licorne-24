@@ -1,0 +1,51 @@
+.footer-legals {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 70px 0 65px;
+}
+
+.footer-legals {
+  margin-top: 70px;
+}
+
+.footer-info {
+  font-size: 15px;
+  font-weight: 250;
+  text-decoration: none;
+}
+
+.footer-legal {
+  font-size: 12px;
+  font-weight: 250;
+}
+
+.footer-copyright {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+@media (min-width: 768px) {
+  .footer-copyright {
+    font-size: 16px;
+  }
+
+  .footer-infos {
+    margin: 0;
+  }
+
+  .footer-legal {
+    font-size: 16px;
+  }
+
+  .footer-info {
+    font-size: 18px;
+  }
+}

@@ -25,11 +25,13 @@
 .l-about {
   position: relative;
   margin-top: 80px;
+  overflow: hidden;
 }
 
 .l-footer {
   background: $dark;
-  height: 200px;
+  color: $light;
+  padding: 50px 0 25px;
 }
 
 @media (min-width: 768px) {
@@ -40,5 +42,9 @@
 
   .l-about {
     margin-top: 140px;
+  }
+
+  .l-footer {
+    padding: 90px 0 70px;
   }
 }
