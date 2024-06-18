@@ -19,3 +19,31 @@
     transform: scaleX(100%);
   }
 }
+
+@mixin gradientAnim {
+  background: radial-gradient(
+    $blondBack,
+    $blondMain,
+    $brownMain,
+    $ipaMain,
+    $ipaBack
+  );
+
+  background-size: 360% 360%;
+  animation: gradient-animation 20s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 100%;
+  }
+  33% {
+    background-position: 50% 0%;
+  }
+  66% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}

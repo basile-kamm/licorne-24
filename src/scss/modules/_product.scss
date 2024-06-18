@@ -72,7 +72,7 @@
 }
 
 .product-cta {
-  margin-top: 30px;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -150,7 +150,7 @@
   .product-card {
     height: 600px;
     flex-grow: 1;
-    transition: flex-grow 0.2s ease-out;
+    transition: flex-grow 0.3s ease-out 0.1s;
     position: relative;
   }
 
@@ -164,9 +164,22 @@
     opacity: 0;
     max-width: 260px;
     transition: opacity 0.3s, transform 0.3s;
-    transform: translateX(-100%);
     align-items: flex-start;
     pointer-events: none;
+    overflow: hidden;
+
+    .button {
+      white-space: nowrap;
+    }
+
+    .product-text,
+    .product-ingredient,
+    .product-price-unity,
+    .product-price-group,
+    .button {
+      transform: translateX(-100%);
+      transition: transform 0.3s;
+    }
   }
 
   .product-text,
@@ -185,9 +198,31 @@
 
     .product-description {
       opacity: 1;
-      transform: translateX(0);
-      transition: opacity 0.3s 0.2s, transform 0.3s 0.2s;
+      transition: opacity 0.3s 0.1s;
       pointer-events: all;
+
+      .product-text,
+      .product-ingredient,
+      .product-price-unity,
+      .product-price-group,
+      .button {
+        transform: translateX(0);
+      }
+      .button {
+        transition-delay: 0.1s;
+      }
+      .product-price-group {
+        transition-delay: 0.2s;
+      }
+      .product-price-unity {
+        transition-delay: 0.3s;
+      }
+      .product-ingredient {
+        transition-delay: 0.4s;
+      }
+      .product-text {
+        transition-delay: 0.5s;
+      }
     }
 
     .product-img {
@@ -216,7 +251,7 @@
     width: 200px;
     bottom: -40px;
     left: -40px;
-    transition: scale 0.3s 0.1s;
+    transition: scale 0.4s 0.2s;
   }
 
   .product-card.t-blonde:hover ~ .deco g {

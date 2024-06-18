@@ -1,7 +1,12 @@
 .hero-logo {
+  height: 300px;
+  // mask: url(../img/licorne-logo.svg);
+  // mask-position: center;
+  // mask-repeat: no-repeat;
   width: 85vw;
   margin: auto;
   margin-bottom: 10px;
+  fill: $dark;
 }
 
 .hero-subtitle {

@@ -2,11 +2,15 @@
   width: 30px;
   height: 30px;
 
-  &.t-dark path {
+  &.t-dark .svg-g {
     fill: $dark;
   }
-  &.t-light path {
+  &.t-light .svg-g {
     fill: $light;
+  }
+
+  &:hover .svg-g {
+    fill: var(--random-color, $ipaBack);
   }
 }
 

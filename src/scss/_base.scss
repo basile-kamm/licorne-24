@@ -51,3 +51,15 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+svg {
+  .svg-g {
+    transition: fill 0.3s;
+  }
+
+  &:hover {
+    .svg-g {
+      fill: var(--random-color, $ipaBack);
+    }
+  }
+}
