@@ -1,7 +1,7 @@
 .deco {
   position: absolute;
   aspect-ratio: 1/1;
-  animation: decoRotate 30s infinite linear;
+  // animation: decoRotate 30s infinite linear;
   overflow: hidden;
   opacity: 0.9;
 
@@ -9,9 +9,9 @@
     fill: $dark;
   }
 
-  &.t-reverse {
-    animation-direction: reverse;
-  }
+  // &.t-reverse {
+  //   animation-direction: reverse;
+  // }
 }
 
 .t-swiss {

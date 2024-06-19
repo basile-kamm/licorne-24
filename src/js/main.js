@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 var burger = document.querySelector("[data-burger]");
 var burgerIcon = document.querySelector("[data-burgerIcon]");
 
@@ -88,4 +90,33 @@ function animateCircles() {
 }
 
 animateCircles();
-f;
+
+document.addEventListener("DOMContentLoaded", function () {
+  const rotatingElements = document.querySelectorAll(".deco");
+
+  const speedFactor = 5;
+
+  rotatingElements.forEach((element) => {
+    // Basic infinite rotation
+    const t = gsap.to(element, {
+      rotation: 360,
+      duration: 30,
+      ease: "none",
+      repeat: -1,
+    });
+
+    // ScrollTrigger for each element
+    ScrollTrigger.create({
+      trigger: "html",
+      start: "top top",
+      end: "bottom bottom",
+      onUpdate: (self) => {
+        gsap
+          .to(t, { timeScale: speedFactor * self.direction, duration: 0.1 })
+          .then(() => {
+            gsap.to(t, { timeScale: 1, duration: 1 });
+          });
+      },
+    });
+  });
+});
