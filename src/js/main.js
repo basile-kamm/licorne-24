@@ -97,9 +97,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const speedFactor = 5;
 
   rotatingElements.forEach((element) => {
-    // Basic infinite rotation
+    const rotationDirection = element.classList.contains("t-reverse")
+      ? -360
+      : 360;
+
     const t = gsap.to(element, {
-      rotation: 360,
+      rotation: rotationDirection,
       duration: 30,
       ease: "none",
       repeat: -1,
