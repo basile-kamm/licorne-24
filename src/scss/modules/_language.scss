@@ -1,10 +1,35 @@
 .language-container {
-  font-weight: 900;
-  font-size: 18px;
+  select {
+    appearance: none;
+    outline: 0;
+    width: 45px;
+    transform: translateY(2px);
+
+    background: var(--arrow-icon) no-repeat right 2px center / 15px;
+    color: $dark;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 18px;
+    border: none;
+    &::-ms-expand {
+      display: none;
+    }
+    /* Remove focus outline */
+    &:focus {
+      outline: none;
+    }
+    /* <option> colors */
+    option {
+      color: inherit;
+      background-color: var(--arrow-bg);
+    }
+  }
 }
 
 @media (min-width: 768px) {
-  .language-container {
+  .language-container select {
     font-size: 30px;
+    width: 60px;
+    transform: translateY(-2px);
   }
 }
