@@ -2,13 +2,15 @@
   select {
     appearance: none;
     outline: 0;
-    width: 45px;
+    width: 55px;
     transform: translateY(2px);
 
-    background: var(--arrow-icon) no-repeat right 2px center / 15px;
+    background: var(--arrow-icon) no-repeat left 0 center / 15px;
     color: $dark;
     cursor: pointer;
+    text-align: right;
     font-weight: 900;
+    -webkit-text-stroke: 1px $dark;
     font-size: 18px;
     border: none;
     &::-ms-expand {
@@ -21,7 +23,6 @@
     /* <option> colors */
     option {
       color: inherit;
-      background-color: var(--arrow-bg);
     }
   }
 }
