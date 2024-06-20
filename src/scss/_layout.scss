@@ -7,7 +7,7 @@
   z-index: 5;
   border-bottom: 1px solid $dark;
   height: 40px;
-  padding: 10px 0;
+  padding: 10px 10px 10px 20px;
 }
 
 .l-hero {
@@ -42,7 +42,7 @@
 @media (min-width: 768px) {
   .l-header {
     height: 80px;
-    padding: 24px 0;
+    padding: 24px 60px;
   }
 
   .l-about {

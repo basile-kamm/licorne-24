@@ -3,7 +3,7 @@
   // mask-position: center;
   // mask-repeat: no-repeat;
   width: 85vw;
-  margin: auto;
+  margin: 0 0 0 30px;
   margin-bottom: 10px;
   fill: $dark;
 }
@@ -12,8 +12,9 @@
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 900;
-  text-align: center;
+  text-align: left;
   margin-bottom: 100px;
+  padding-left: 30px;
 }
 
 .hero-buttons {
@@ -39,8 +40,13 @@
     margin-top: 200px;
   }
 
+  .hero-logo {
+    margin: auto;
+  }
+
   .hero-subtitle {
     font-size: 20px;
+    text-align: center;
   }
 
   .hero-buttons {

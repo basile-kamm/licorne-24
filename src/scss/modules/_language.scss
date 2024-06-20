@@ -2,15 +2,14 @@
   select {
     appearance: none;
     outline: 0;
-    width: 55px;
+    width: 40px;
     transform: translateY(2px);
 
-    background: var(--arrow-icon) no-repeat left 0 center / 15px;
+    background: var(--arrow-icon) no-repeat left 0 top 7px / 13px;
     color: $dark;
     cursor: pointer;
     text-align: right;
     font-weight: 900;
-    -webkit-text-stroke: 1px $dark;
     font-size: 18px;
     border: none;
     &::-ms-expand {
@@ -30,7 +29,9 @@
 @media (min-width: 768px) {
   .language-container select {
     font-size: 30px;
-    width: 60px;
     transform: translateY(-2px);
+    width: 63px;
+    -webkit-text-stroke: 1px $dark;
+    background: var(--arrow-icon) no-repeat left 0 center / 15px;
   }
 }

@@ -1,0 +1,38 @@
+.blank-title {
+  font-size: 30px;
+  padding-top: 30vh;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.blank-text {
+  font-weight: 250;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.blank-cta {
+  margin-top: 60px;
+}
+
+.blank-main {
+  height: 80vh;
+}
+
+.blank-arrow {
+  rotate: 180deg;
+  width: 30px;
+
+  g {
+    fill: $dark;
+  }
+}
+
+@media (min-width: 768px) {
+  .blank-text {
+    font-size: 20px;
+  }
+
+  .blank-title {
+    font-size: 45px;
+  }
+}
